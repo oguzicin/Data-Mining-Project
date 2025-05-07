@@ -33,7 +33,7 @@ const TextClassificationPage: React.FC = () => {
   const [authors, setAuthors] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch articles when author changes
+
   useEffect(() => {
     setArticles([]);
     setOriginalArticles([]);
@@ -42,7 +42,7 @@ const TextClassificationPage: React.FC = () => {
     if (selectedAuthor) {
       axios.get<{ articles: { id: string; title: string; date: string }[] }>(`http://localhost:5001/articles?author=${selectedAuthor}`)
         .then(async res => {
-          // Her yazı için etiketleri tahmin et
+
           const articlesWithTags = await Promise.all(
             res.data.articles.map(async (article) => {
               try {
@@ -72,7 +72,7 @@ const TextClassificationPage: React.FC = () => {
     }
   }, [selectedAuthor]);
 
-  // Predict tags for selected article
+
   const handlePredictArticleTags = async () => {
     if (!selectedArticle || !selectedArticle.content) return;
     setArticleLoading(true);
@@ -89,7 +89,7 @@ const TextClassificationPage: React.FC = () => {
     }
   };
 
-  // Predict tags for free text
+
   const handlePredict = async () => {
     if (!inputText.trim()) return;
     setFreeTextLoading(true);
@@ -106,7 +106,7 @@ const TextClassificationPage: React.FC = () => {
     }
   };
 
-  // Etiket seçildiğinde yazıları filtrele
+
   const handleTagSelect = (selectedTag: string | null) => {
     if (!selectedTag) {
       setArticles(originalArticles);
@@ -131,12 +131,12 @@ const TextClassificationPage: React.FC = () => {
       <div className="flex flex-col items-center justify-center min-h-screen">
         <h1 className="text-2xl font-bold mb-4">Text Classification</h1>
 
-        {/* Yazar seçme */}
+
         <div className="w-[500px] mb-6">
           <AuthorSelect onAuthorSelect={setSelectedAuthor} />
         </div>
 
-        {/* Yazarın yazıları */}
+
         {selectedAuthor && (
           <div className="w-[500px] mb-6">
             <h2 className="text-xl font-semibold mb-2">Yazarın Yazıları</h2>
@@ -154,7 +154,7 @@ const TextClassificationPage: React.FC = () => {
           </div>
         )}
 
-        {/* Seçilen yazının içeriği ve tag tahmini */}
+
         {selectedArticle && (
           <div className="w-[500px] mb-6">
             <h2 className="text-lg font-semibold mb-2">Yazı İçeriği</h2>
@@ -176,7 +176,7 @@ const TextClassificationPage: React.FC = () => {
           </div>
         )}
 
-        {/* Serbest metin girişi ve tag tahmini */}
+
         <div className="w-[500px] mb-6">
           <h2 className="text-xl font-semibold mb-2">Serbest Metin ile Etiket Tahmini</h2>
           <Textinput
@@ -200,7 +200,7 @@ const TextClassificationPage: React.FC = () => {
           )}
         </div>
 
-        {/* Etiket filtreleme */}
+
         <div className="w-[500px]">
           <h2 className="text-xl font-semibold mb-2">Etiketlere Göre Filtrele:</h2>
           <Tags allTags={allTags} onTagSelect={handleTagSelect} />

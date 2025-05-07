@@ -4,11 +4,11 @@ import torch
 import numpy as np
 from tqdm import tqdm
 
-# BERT tokenizer ve modelini yükle
+
 tokenizer = BertTokenizer.from_pretrained("bert-base-uncased")
 model = BertModel.from_pretrained("bert-base-uncased")
 
-# Metinleri BERT vektörüne dönüştüren fonksiyon
+
 def get_bert_embeddings(texts):
     embeddings = []
     for text in tqdm(texts, desc="BERT Embedding"):

@@ -62,7 +62,7 @@ const AuthorPage: React.FC = () => {
 
       <TextList texts={filteredTexts} onTextSelect={handleTextSelect} />
 
-      {/* Seçilen metnin etiket tahmini */}
+      
       {selectedText && (
         <div className="mt-6 p-4 border rounded bg-white shadow">
           <div className="font-semibold mb-2">Seçilen Metin:</div>

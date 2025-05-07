@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 interface TagsProps {
-  allTags: string[]; // ['edebiyat', 'savaş', 'kadın', ...]
-  onTagSelect: (tag: string | null) => void; // null = seçim kaldırıldı
+  allTags: string[];
+  onTagSelect: (tag: string | null) => void;
 }
 
 const Tags: React.FC<TagsProps> = ({ allTags, onTagSelect }) => {
@@ -11,10 +11,10 @@ const Tags: React.FC<TagsProps> = ({ allTags, onTagSelect }) => {
   const handleTagClick = (tag: string) => {
     if (selectedTag === tag) {
       setSelectedTag(null);
-      onTagSelect(null); // Seçimi kaldır
+      onTagSelect(null);
     } else {
       setSelectedTag(tag);
-      onTagSelect(tag); // Yeni tag seçildi
+      onTagSelect(tag);
     }
   };
 
