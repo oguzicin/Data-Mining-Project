@@ -29,7 +29,3 @@ If OAuth or account-based use is enabled:
 
 ---
 
-## 🧪 Live Demo
-Visit the deployed app: [https://your-app-name.herokuapp.com](#)
-
-Use test login credentials:
