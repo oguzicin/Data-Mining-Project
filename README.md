@@ -23,11 +23,13 @@ Graphing tools to visualize author prediction confidence and tag frequency are p
 ## Deployment
 
 ### Backend(Flask)
-cd backend
+cd backend  
+
 python app.py
 
 ### Frontend(React)
-cd data-mining-v2
+cd data-mining-v2  
+
 npm run start
 
 ---
