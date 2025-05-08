@@ -22,10 +22,6 @@ Graphing tools to visualize author prediction confidence and tag frequency are p
 
 ---
 
-## 🔐 Log In System (Optional)
-If OAuth or account-based use is enabled:
-- Users log in via Google Account (OAuth 2.0)
-- User sessions are stored to track prediction history (optional)
 
----
+
 
