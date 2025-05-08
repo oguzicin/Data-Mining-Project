@@ -22,7 +22,7 @@ Graphing tools to visualize author prediction confidence and tag frequency are p
 
 ## Deployment
 
-### 📝 Backend(Flask)
+### Backend(Flask)
 cd backend
 python app.py
 
