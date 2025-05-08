@@ -29,6 +29,7 @@ python app.py
 ### Frontend(React)
 cd data-mining-v2
 npm run start
+
 ---
 
 
