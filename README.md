@@ -20,6 +20,15 @@ In addition to authorship, the app also extracts and displays relevant **tags** 
 ### 📊 Visual Analysis (Future Scope)
 Graphing tools to visualize author prediction confidence and tag frequency are planned for future versions.
 
+## Deployment
+
+### 📝 Backend(Flask)
+cd backend
+python app.py
+
+### Frontend(React)
+cd data-mining-v2
+npm run start
 ---
 
 
