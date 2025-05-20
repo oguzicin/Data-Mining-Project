@@ -13,17 +13,17 @@ This application is designed to analyze written text by predicting its likely au
 
 ##  Features
 
-###  Text Input & Author Prediction
+###  >Text Input & Author Prediction
 Users can paste any piece of text into the input box and click submit. The backend processes the text and returns a predicted author, along with a confidence score. The model is trained on a curated dataset and supports multiple classification approaches, from statistical models to transformer-based embeddings.
 
 For testing: Paste in different paragraphs from known authors to explore the prediction output.
 
-###  Keyword Tagging
+###  >Keyword Tagging
 In addition to authorship prediction, the backend extracts key topics and themes from the input text. These are returned as tags and displayed below the prediction result, providing quick insight into the content's subject matter.
 
 For testing: Try providing text from different genres or topics and observe how the tags change.
 
-###  Visual Analysis (Future Scope)
+###  >Visual Analysis (Future Scope)
 -Upcoming versions will include visual tools for:
 
 -Confidence heatmaps for author predictions
