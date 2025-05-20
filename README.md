@@ -1,6 +1,6 @@
 # 🧠 Author Classification & Text Tagging Web App
 
-This full-stack web application allows users to input text and receive the **predicted author** and **relevant keyword tags** using advanced natural language processing and machine learning models.
+
 
 Built with:
 - 🖥️ **Frontend**: React + TypeScript
