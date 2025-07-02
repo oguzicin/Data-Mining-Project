@@ -5,7 +5,7 @@
 Built with:
 -  **Frontend**: React + TypeScript
 -  **Backend**: Flask + Scikit-learn/BERT
--  Deployed via: [Heroku / Your platform here]
+
 
 ---
 ##  Over view
